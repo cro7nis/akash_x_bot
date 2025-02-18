@@ -1,0 +1,9 @@
+default:
+  logging:
+    level: DEBUG
+    format: "<green>{time:YYYY-MM-DD HH:mm:ss.SSS}</green> | <yellow>{process}</yellow> |<level>{level: <8}</level> | <cyan>{name}:<cyan>{extra[classname]}</cyan>:</cyan>:<cyan>{function}</cyan>:<cyan>{line}</cyan> - <level>{message}</level>"
+  akash_api:
+    console_server: https://console-api.akash.network/v1/
+    cloudmos_server: https://api.cloudmos.io/internal/
+  openai:
+    model: 'DeepSeek-R1'

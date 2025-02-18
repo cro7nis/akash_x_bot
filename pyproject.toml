@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "akash_bot"
+version = "0.1.0"
+description = ""
+authors = ["cro7 <cro7nis@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+matplotlib = "*"
+tqdm = "*"
+omegaconf = "*"
+dynaconf = "*"
+loguru = "*"
+openai = "*"
+tweepy = "*"
+schedule = "*"
+pytz = "*"
+bs4 = "*"
+pandas = "*"
+seaborn = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
