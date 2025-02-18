@@ -80,7 +80,7 @@ class AkashBot:
         try:
             os.makedirs(plot_dir, exist_ok=True)
             current_time = datetime.now(timezone.utc)
-            formatted_time = current_time.strftime("%Y-%m-%d %H:%M:%S %Z")
+            formatted_time = current_time.strftime("%Y-%m-%d_%H:%M:%S_%Z")
             self.logger.info(f"Current time: {formatted_time}")
 
             data = self.retriever.retrieve('all')
@@ -91,7 +91,7 @@ class AkashBot:
             plot_paths = []
             # gpu stats
             samples = self.granularities[granularity] * amount
-            gpu_stats_filepath = os.path.join(plot_dir, f'/gpu_{formatted_time}.png')
+            gpu_stats_filepath = os.path.join(plot_dir, f'gpu_{formatted_time}.png')
             create_gpu_plot(df, granularity=granularity, amount=amount, name=gpu_stats_filepath)
             gpu_data = df.tail(samples)
             gpu_data = gpu_data.loc[:, ['date', 'totalGPU', 'activeGPU', 'utilization']]

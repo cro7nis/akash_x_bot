@@ -85,7 +85,7 @@ def create_gpu_plot(df, name='gpus.png', granularity='day', amount=1, save=True)
     plt.title(f"Akash GPUs in the last {amount}-{granularity} period", fontweight='bold')
     if save:
         plt.savefig(name, dpi=300, bbox_inches="tight")
-    plt.show()
+    #plt.show()
 
 
 def create_usd_plot(df, name='usd_spent.png', granularity='day', amount=7, save=True):
@@ -129,7 +129,7 @@ def create_usd_plot(df, name='usd_spent.png', granularity='day', amount=7, save=
     plt.tight_layout()
     if save:
         plt.savefig(name, dpi=300, bbox_inches="tight")
-    plt.show()
+    #plt.show()
 
 
 def create_gpu_availability_and_price_plot(gpu_data, name='gpu_details.png', save=True):
@@ -170,7 +170,7 @@ def create_gpu_availability_and_price_plot(gpu_data, name='gpu_details.png', sav
     plt.tight_layout()
     if save:
         plt.savefig(name, dpi=300, bbox_inches="tight")
-    plt.show()
+    #plt.show()
 
 
 if __name__ == '__main__':

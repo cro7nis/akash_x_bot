@@ -7,3 +7,5 @@ default:
     cloudmos_server: https://api.cloudmos.io/internal/
   openai:
     model: 'DeepSeek-R1'
+  bot:
+    time: "11:00"
