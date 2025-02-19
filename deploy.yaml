@@ -3,6 +3,10 @@ version: "2.0"
 services:
   app:
     image: cro7/akash_x_bot:0.0.1
+    expose:
+      - port: 80
+        to:
+          - global: true
     env:
       - _X__CONSUMER_KEY=<consumer_key>
       - _X__CONSUMER_SECRET=<consumer_key>
