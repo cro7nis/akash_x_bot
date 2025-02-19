@@ -29,7 +29,7 @@ class Reporter:
         usd_spend_now = dashboard['now']['dailyUUsdSpent'] / 1000000000
         usd_spend_now_yesterday = dashboard['compare']['dailyUUsdSpent'] / 1000000000
         usd_spend_change_prc = ((usd_spend_now - usd_spend_now_yesterday) / usd_spend_now_yesterday) *100
-        usd_spent_emoji = '📈' if gpu_change_prc >= 0.0 else '📉'
+        usd_spent_emoji = '📈' if usd_spend_change_prc >= 0.0 else '📉'
 
 
         report = (f"Akash Network Daily Report - {formatted_time}\n\n"
