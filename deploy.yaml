@@ -1,0 +1,34 @@
+---
+version: "2.0"
+services:
+  app:
+    image: cro7/akash_x_bot:0.0.1
+    env:
+      - _X__CONSUMER_KEY=<consumer_key>
+      - _X__CONSUMER_SECRET=<consumer_key>
+      - _X__ACCESS_TOKEN=<consumer_key>
+      - _X__ACCESS_TOKEN_SECRET=<consumer_key>
+      - _OPENAI__BASE_URL=<base_url>
+      - _OPENAI__API_KEY=<api_key>
+profiles:
+  compute:
+    app:
+      resources:
+        cpu:
+          units: 4
+        memory:
+          size: 8Gi
+        storage:
+          - size: 10Gi
+
+  placement:
+    dcloud:
+      pricing:
+        app:
+          denom: uakt
+          amount: 1000
+deployment:
+  app:
+    dcloud:
+      profile: app
+      count: 1
