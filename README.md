@@ -19,6 +19,7 @@ Follow the bot's X (Twitter) account [here](https://x.com/AkashBot48145)
   * The bot uses [AkashChat API](https://chatapi.akash.network/) to generate automatic descriptions using the plot data
 * Tweet generation
   * The bot uses the generated report, the plots and the corresponding AI-generated descriptions to create a daily thread on X
+* Bot is scheduled to generate and post an X thread every day at 11:00 UTC
 
 ## Environment variables
 To use this bot you need to provide the all the nesessarry credentials from the [X Developer Portal](https://developer.x.com/)
