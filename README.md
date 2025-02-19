@@ -34,6 +34,36 @@ _OPENAI__BASE_URL=<base_url>
 _OPENAI__API_KEY=<api_key>
 ```
 
+You can change other configurations in [configs/settings.yaml](configs/settings.yaml)
+
+## Run with Docker
+
+To create the Docker image run from the project's root path:
+```
+docker build -t <user>/akash_x_bot:0.0.1 -f docker/Dockerfile .
+```
+Create an .env file with the above environmentals and run the container:
+```
+docker run --env-file .env <user>/akash_x_bot:0.0.1 
+```
+
+## Deploy on Akash <img src="assets/akash-logo-sm.png" alt="drawing" style="width:25px;"/>
+
+ - Create a [deployment](deploy.yaml) file using [Stack Definition Language](https://akash.network/docs/getting-started/stack-definition-language/)
+ - Visit https://console.akash.network/
+ - Create and fund a Keplr/Leap wallet, create an account to proceed with fiat payments, or start trial
+   - [Keplr wallet](https://akash.network/docs/getting-started/token-and-wallets/#keplr-wallet)
+   - [Leap wallet](https://akash.network/docs/getting-started/token-and-wallets/#leap-cosmos-wallet)
+- Connect your wallet
+  - You need to have at least 0.5 AKT in your wallet
+- Press the deploy button
+- Select "Run Custom Container"
+- Select YAML tab and paste the [deploy.yaml](deploy.yaml) configuration and add the necessary environment variables
+- Press "Create Deployment" and accept wallet transaction
+- Review bids, select provider and accept wallet transaction
+- Wait until container is up check the logs
+- Check the [Akash console docs](https://akash.network/docs/getting-started/quickstart-guides/akash-console/) if you have and questions
+
 ## Generated thread example
 ### Report
 
