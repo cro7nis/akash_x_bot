@@ -50,9 +50,7 @@ docker run --env-file .env <user>/akash_x_bot:0.0.1
 
 ## Deploy on Akash <img src="assets/akash-logo-sm.png" alt="drawing" style="width:25px;"/>
 
-
-https://github.com/user-attachments/assets/9091b349-4a14-4594-b01b-26575efe8c2d
-
+https://github.com/user-attachments/assets/1c47ca5d-2398-4aca-bc96-08a5a0bf82a7
 
  - Create a [deployment](deploy.yaml) file using [Stack Definition Language](https://akash.network/docs/getting-started/stack-definition-language/)
  - Visit https://console.akash.network/
