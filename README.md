@@ -2,7 +2,7 @@
 <img src="assets/bot.png" alt="drawing" width="500"/>
 
 Akash X bot is dedicated to provide daily summaries of  Akash Network's on-chain statistics, keeping you up-to-date on the latest network activity.
-This bot was created for on of the the Akash network [zealy tasks](https://zealy.io/cw/akashnetwork/).
+This bot was created for one of the the Akash network [zealy tasks](https://zealy.io/cw/akashnetwork/).
 
 Follow the bot's X (Twitter) account [here](https://x.com/AkashBot48145)
 
